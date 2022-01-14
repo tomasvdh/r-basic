@@ -68,4 +68,4 @@ factorial(5)
 
 factorial(0)
 
-choose(5,7)
+choose(5,        3)
