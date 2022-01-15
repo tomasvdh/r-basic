@@ -118,4 +118,24 @@
     x = x^2
     x = sqrt(x)   
     x
+
+    
+    
+# Crear funciones en R
+    miVariable = 4
+    doble = function(x){2*x}
+    doble(miVariable)
+
+    cuadrado = function(x){x^2}
+    cuadrado(miVariable)
+    
+    # Función f(x) = x^3 - (3^x) * sin(x)
+    f = function(x){x^3 - (3^x) * sin(x)}
+    f(4) # 4^3 - (3^4) * sin(4)   
+    f(5)    
+    f(pi/2)
+    
+    suma1 = function(t){t+1}
+    suma1(6)
+    suma1(-5)
     
