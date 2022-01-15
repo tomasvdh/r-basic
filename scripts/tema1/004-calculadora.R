@@ -139,3 +139,33 @@
     suma1(6)
     suma1(-5)
     
+    product <- function(x, y){
+      x*y
+    }
+    product(5,7)    
+    
+    g <- function(x,y,z){
+      exp(x^2 + y^2) * sin(z)
+    }
+    g(1,2,3)    
+    g(1,-1,pi)    
+    
+    suma5 <- function(numero){
+      numero = suma1(numero);
+      numero = suma1(numero);
+      numero = suma1(numero);
+      numero = suma1(numero);
+      suma1(numero)
+    }
+    suma5(3)
+
+    
+    # Listar los elementos. Funciones y variables
+    ls()    
+    
+    # Remover una funcion o variable
+    rm(product)    
+    
+    # Remover todas las funciones o variables
+    rm(list = ls())
+        
