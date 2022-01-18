@@ -1,0 +1,29 @@
+---
+title: "Documentación de texto"
+output: pdf_document
+---
+
+# Título de primer nivel
+
+## Título de segundo nivel
+
+### Título de tercer nivel
+
+#### Título de cuarto nivel
+
+##### Título de quinto nivel
+
+###### Título de sexto nivel
+
+Esto es un texto llano. Podemos escribir todo el texto que queramos para acompañar tanto al código en `R` como las formulas de \LaTeX.
+
+Esto es una nueva línea de texto. Para separar los párrafos se necesita doble intro.
+
+Para colocar cursiva podemos usar un asterisco: *esto sería un texto en cursiva* o bien podemos usar una sola barra baja _esto también es cursiva_
+
+Para colocar negrita podemos usar un doble asterisco: **esto es negrita** o bien podemos usar doble barra baja __esto también es negrita__
+
+Los superindices van con el *sombrerito*: este curso vale por mi nota^2^.
+Tomás^estudiante^
+
+Para tachar una palabra usamos el doble tilde ~~Las matemáticas son un rollo~~
