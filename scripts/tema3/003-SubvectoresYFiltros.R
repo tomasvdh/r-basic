@@ -49,10 +49,26 @@
   
   
   
-  x = c(1,7,4,2,8,9,6,3,5)
-  y = c(-1,0,3,-4,9,8,6,2,-5)
+  x = c(1,2,3,4,5,6,7,8,9)
+  y = c(-3,-2,-1,0,1,2,3,4,5)
   
-  x[y>0] # = 4 8 9 6 3
+  x[y>0] # = 5 6 7 8 9
   
+  y # = -3 -2 -1 0 1 2 3 4 5
+  which(y>4) # = 9 (posicion 4,5 y 6)
+  y[which(y>4)] # = 5
+  which(y>-1 & y<3) # = 4 5 6 (posicion 4,5 y 6)
+  y[which(y<0|y>2)] # = -3 -2 -1  3  4  5
+  which(y>1|y%%2==0) # = 2 4 6 7 8 9 (posicion 2,4,6,7,8 y 9)
   
+  y # =-3 -2 -1 0 1 2 3 4 5
+  which.min(y) # = 1 (posicion 1)
+  y[which.min(y)] # = -3
+  which.max(y) # = 9
+  y[which.max(y)] # = 5
+  
+  fix(x)
+  x # = 1 2 3 4 5 6 7 9 9
+  which(x == max(x)) # = 8 9 (posicion 8 y 9)
+  x[which(x == max(x))] # = 9 9 
   
