@@ -73,4 +73,18 @@
   which(x == max(x)) # = 8 9 (posicion 8 y 9)
   x[which(x == max(x))] # = 9 9 
   
+  x[x<4 & x>7] # = numeric(0)
+  
+  which(x<4 & x>7) # = integer(0)
+  
+  
+  
+  x = c()
+  x # = NULL
+  
+  y = NULL
+  y # = NULL
+  
+  z = c(x,2,y,4)
+  z # = 2 4
   
