@@ -69,6 +69,8 @@
   
   fix(x)
   x # = 1 2 3 4 5 6 7 9 9
+  which.max(x) # 8 (la primera posicion que aparece el numero mas grande)
   which(x == max(x)) # = 8 9 (posicion 8 y 9)
   x[which(x == max(x))] # = 9 9 
+  
   
