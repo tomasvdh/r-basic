@@ -53,3 +53,16 @@
   
   sum(x[!is.na(x)]) # = 86
   
+  x # = 1  5 35  7  8  6  7  8  0  0  0 NA NA NA NA  9
+  cumsum(x) # = 1 6 41 48 56 62 69 77 77 77 77 NA NA NA NA NA
+  cumsum(x[!is.na(x)]) # = 1 6 41 48 56 62 69 77 77 77 77 86
+  
+  na.omit(x) # = 1 5 35  7  8  6  7  8  0  0  0  9
+             #   attr(,"na.action")
+             #   12 13 14 15
+             #   attr(,"class")
+             #   "omit"
+  
+  sum(na.omit(x)) # = 86
+  cumsum(na.omit(x)) # = 1 6 41 48 56 62 69 77 77 77 77 86
+  
