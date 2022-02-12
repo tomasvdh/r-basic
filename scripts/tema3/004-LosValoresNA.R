@@ -66,3 +66,13 @@
   sum(na.omit(x)) # = 86
   cumsum(na.omit(x)) # = 1 6 41 48 56 62 69 77 77 77 77 86
   
+  x_clean = na.omit(x)
+  x_clean # = 1  5 35  7  8  6  7  8  0  0  0  9
+          #   attr(,"na.action")
+          #   12 13 14 15
+          #   attr(,"class")
+          #   "omit"
+  attr(x_clean, "na.action") = NULL
+  attr(x_clean, "class") = NULL
+  x_clean # = 1 5 35  7  8  6  7  8  0  0  0  9
+  
