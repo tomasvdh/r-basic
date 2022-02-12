@@ -44,3 +44,8 @@
                # Aprobado  
                # Levels: Suspendido Aprobado
   
+  notas
+  ordered(notas, labels = c("Sus", "Suf", "Not", "Exc")) 
+      # = Sus Not Exc Suf Not Exc Suf Sus Not Exc Suf Suf Suf
+      # Levels: Sus < Suf < Not < Exc
+  
