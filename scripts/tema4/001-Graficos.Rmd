@@ -1,6 +1,8 @@
 ---
 title: "Graficos"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +36,22 @@ plot(f)
 n = 1:20
 fib = (1/sqrt(5))*((1+sqrt(5))/2)^n-(1/sqrt(5))*((1-sqrt(5))/2)^n
 fib
+par(mfrow = c(1,2))
 plot(fib, xlab="n", ylab= expression(F[n]),
-     main = "Sucesión de Fibonacci", pch = 20, cex = 1, col = "black")
+     main = "Sucesión de Fibonacci", pch = 21, cex = 1, col = "black", bg = "palegoldenrod", log = "xy")
+par(mfrow = c(1,1))
 ```
+
+## Escála logarítmica
+
+```{r}
+par(mfrow = c(1,2))
+plot = plot(exp(1:20), xlab = "Indice", ylab = expression(e^{1:20}),
+            main = "Escala lineal")
+plotLog = plot(exp(1:20), log = "y", xlab = "Indice",
+               ylab = expression(e^{1:20}), 
+               main = "Escala logarítmica en el eje y")
+par(mfrow = c(1,1))
+```
+
 
