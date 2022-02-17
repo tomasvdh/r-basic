@@ -1,0 +1,17 @@
+---
+title: "Graficos"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Gráficos con la función `plot`
+
+## Gráfico básico de puntos
+```{r}
+alumnos = c(1:10)
+notas = c(4,7,8,5,9,8,7,7,10,6)
+plot(alumnos,notas)
+```
