@@ -28,3 +28,13 @@ f <- function(x){sqrt(x)}
 plot(f)
 ```
 
+## Parámetros
+
+```{r}
+n = 1:20
+fib = (1/sqrt(5))*((1+sqrt(5))/2)^n-(1/sqrt(5))*((1-sqrt(5))/2)^n
+fib
+plot(fib, xlab="n", ylab= expression(F[n]),
+     main = "Sucesión de Fibonacci", pch = 20, cex = 1, col = "black")
+```
+
