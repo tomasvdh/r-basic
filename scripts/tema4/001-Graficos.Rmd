@@ -78,4 +78,5 @@ plot(x, y, main="Ejemplo de grafico", pch=20, cex=1, type="b", lty=4, lwd=2, xax
 plot(n, fib, pch=20, col="black",cex=1.2, type="o",lty="dashed", lwd=2, xlim=c(0,20), ylim=c(0,6000), xaxp=c(0,20,8),yaxp=c(0,6000,12))
 ```
 
-
+## ?plot
+## ?par
