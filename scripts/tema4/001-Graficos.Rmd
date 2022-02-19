@@ -42,7 +42,7 @@ plot(fib, xlab="n", ylab= expression(F[n]),
 par(mfrow = c(1,1))
 ```
 
-## Escála logarítmica
+#### Escála logarítmica
 
 ```{r}
 par(mfrow = c(1,2))
@@ -75,8 +75,42 @@ plot(x, y, main="Ejemplo de grafico", pch=20, cex=1, type="b", lty=4, lwd=2, xax
 ```
 
 ```{r}
-plot(n, fib, pch=20, col="black",cex=1.2, type="o",lty="dashed", lwd=2, xlim=c(0,20), ylim=c(0,6000), xaxp=c(0,20,8),yaxp=c(0,6000,12))
+plot(n, fib, main="Fibonacci",pch=20, col="black",cex=1.2, type="o",lty="dashed", lwd=2, xlim=c(0,20), ylim=c(0,6000), xaxp=c(0,20,8),yaxp=c(0,6000,12))
 ```
 
-## ?plot
-## ?par
+#### ?plot
+#### ?par
+
+## Gráfico añadiendo punto y recta
+```{r}
+x = (2*(1:20))
+y = (-1)^(1:20)*5*(1:20)
+plot(x,y,main="Poniendo un punto y una recta",pch=20,cex=1,type="b", lty=4,lwd=4,xaxp=c(0,40,2),yaxp=c(-100,100,8))
+points(20,0,col="red",cex=2,pch=16)
+abline(h=0,lty=1,lwd=2,col="blue",)
+```
+
+### Ejemplo
+```{r}
+f <- function(x){
+  x^2-2*x+sqrt(abs(x))
+}
+plot(f,lwd=2,xlim=c(-3,3),ylim=c(0,15),yaxp=c(0,15,15))
+points(0,0,pch=19,col="red")
+points(-3:3,(-3:3)^2)
+abline(2,3,lty="dashed",col="red")
+abline(v=2,col="lightcyan4")
+abline(h=5,col="lightslateblue")
+```
+
+```{r}
+f <-function(x){x^2}
+plot(f,xlim=c(-3,3),lwd=2,ylab=expression(y^2),xlab="x")
+abline(h=0:9,v=-3:3,lty="dotted",col="gray")
+```
+
+```{r}
+plot(tan,xlim=c(-pi,pi),ylim=c(-10,10),lwd=1.5)
+abline(v = c(-pi/2,pi/2),lwd=1.5,col="red")
+```
+
